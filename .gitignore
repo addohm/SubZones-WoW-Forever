@@ -1,0 +1,24 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.git-credentials
+.netrc
+secrets.*
+*secret*
+*token*
+
+# Blizzard CDN download cache (refetched on demand by tools/casc.py)
+tools/cache/
+
+# wowforevermap.com's data, used only by tools/compare.py; download it locally
+tools/data/subzones.json
+
+# Packaged releases and Python leftovers
+*.zip
+__pycache__/
+*.pyc
