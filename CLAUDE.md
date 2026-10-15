@@ -8,7 +8,7 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `SUBZONES.lua`: all runtime code.
   - `SubzoneBorders.lua`: generated data (~750 KB). Never hand-edit it; regenerate with `tools/build_borders.py`.
   - `SUBZONES.toc`
-- `tools/`: offline data pipeline (Python 3, standard library except where noted).
+- `tools/`: offline data pipeline (Python 3, standard library except where noted). Needed to regenerate border data after game patches; not needed to run the addon.
   - `casc.py`: read-only CASC reader for the local install, with Blizzard CDN fallback.
   - `extract_game.py`: WDT/ADT → per-chunk area IDs → `data/game_areas.json`.
   - `borders.py`: shared geometry: grid → border polylines → smoothing → Lua writer.
@@ -50,6 +50,6 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
 - Defaults: style `lines` (tint is opt-in), minimap on.
 - The user prefers concise updates. Bump the TOC `## Version` on notable changes.
 
-## Not a git repo yet
+## Git
 
-If one is created, the `.gitignore` must cover the global secret patterns and also `tools/cache/`. Consider excluding `tools/data/subzones.json` too: it's wowforevermap.com's data, so get the site owner's OK before publishing it.
+GitHub: `addohm/SubZones-WoW-Forever`, branch `main`. `.gitignore` covers the global secret patterns, `tools/cache/`, `tools/data/subzones.json` (wowforevermap.com's data; never commit it) and `*.zip`. Record notable changes in CHANGELOG.md, and keep README/DEPLOY in step with them.

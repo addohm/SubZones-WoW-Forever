@@ -33,6 +33,7 @@ Then copy `SUBZONES/` into `Interface/AddOns/`. Useful options:
 ### Checking against wowforevermap.com
 
 ```
+curl -o tools/data/subzones.json https://wowforevermap.com/subzones.json   # the site's data, not committed
 python tools/compare.py
 ```
 
@@ -49,3 +50,10 @@ This compares the site's subzones (`tools/data/subzones.json`) with the game, ch
 | `compare.py` | Site vs game report |
 
 Limits: this beta build ships no decryption keys, so the 8 encrypted (unreleased) continents are skipped, and area names are only read in-game. One 16-tile map (fileDataID 790377) isn't matched to a continent ID automatically.
+
+## Docs
+
+- [CHANGELOG.md](CHANGELOG.md): what changed in each version
+- [DEPLOY.md](DEPLOY.md): installing, shipping changes, updating data after a patch
+- [SECURITY.md](SECURITY.md): reporting problems; no secrets are used
+- [CLAUDE.md](CLAUDE.md): orientation for working on the code with Claude
