@@ -4,6 +4,7 @@
 ## Category: Map & Minimap
 ## Version: 1.0.0
 ## Author: addohm
+## X-License: GPLv3
 ## X-Website: https://github.com/addohm/SubZones-WoW-Forever
 ## SavedVariables: SubzonesDB
 

@@ -12,7 +12,7 @@ Copy-paste material for the project pages. Placeholders are in [brackets].
 | Slug | `subzones` (fallback `subzones-forever`) |
 | Game version | WoW: Forever (Interface 16001, client 1.60.1) |
 | Author | addohm |
-| License | [choose: All Rights Reserved, MIT, ...] |
+| License | GNU General Public License version 3 (GPLv3) |
 | Source | https://github.com/addohm/SubZones-WoW-Forever |
 | Issues | https://github.com/addohm/SubZones-WoW-Forever/issues |
 | Logo | `subzones-logo-400.png`, `subzones-logo-1024.png`, `subzones-logo-round-1024.png` (transparent) in this folder |
@@ -123,7 +123,6 @@ so the names are readable.
 
 ## Before publishing
 
-- Choose a license and add a matching `LICENSE` file to the repo.
 - Move the CHANGELOG's Unreleased entries under the version, bump `## Version` in `SUBZONES.toc` if
   needed, and rebuild the zip with `python tools/package.py` (see DEPLOY.md). Upload
   `release/SUBZONES-<version>.zip`.

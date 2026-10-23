@@ -53,6 +53,10 @@ This compares the site's subzones (`tools/data/subzones.json`) with the game, ch
 
 Limits: this beta build ships no decryption keys, so the 8 encrypted (unreleased) continents are skipped, and area names are only read in-game. One 16-tile map (fileDataID 790377) isn't matched to a continent ID automatically.
 
+## License
+
+SUBZONES is licensed under the GNU General Public License version 3 (GPLv3); see [LICENSE](LICENSE).
+
 ## Docs
 
 - [CHANGELOG.md](CHANGELOG.md): what changed in each version

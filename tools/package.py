@@ -4,7 +4,7 @@
     python tools/package.py
 
 The zip holds a top-level SUBZONES/ folder with only the files the TOC loads,
-plus the TOC itself. The version comes from the TOC's ## Version line.
+plus the TOC itself and the repo's LICENSE (GPLv3). The version comes from the TOC's ## Version line.
 """
 import re
 import sys
@@ -35,6 +35,8 @@ def main():
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for name in [TOC.name] + toc_files(text):
             z.write(ADDON / name, f"SUBZONES/{name}")
+        # GPLv3 requires the license text to travel with every copy.
+        z.write(ROOT / "LICENSE", "SUBZONES/LICENSE")
     print(f"wrote {out.relative_to(ROOT)} ({out.stat().st_size // 1024} KB)", file=sys.stderr)
 
 

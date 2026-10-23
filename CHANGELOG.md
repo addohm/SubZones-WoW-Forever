@@ -16,6 +16,7 @@ All notable changes to SubZones-WoW-Forever. The format follows
 
 ### Changed
 
+- Licensed under GPLv3 (`LICENSE`, also packed into the release zip).
 - The repository is public. SECURITY.md describes the release zips.
 
 ## [1.0.0] - 2026-10-15
