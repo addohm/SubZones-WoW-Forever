@@ -29,7 +29,7 @@ Copy-paste material for the project pages. Placeholders are in [brackets].
 
 > Know exactly where Goldshire ends.
 
-**Art** (in [art/](../art))
+**Art** (in [art/](art))
 - Project icon: `art/subzones-logo-400.png` (`art/subzones-logo-1024.png` for larger sizes,
   `art/subzones-logo-round-1024.png` with a transparent background)
 - Header or banner image: `art/subzones-banner.png` (1920×480)
