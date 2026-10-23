@@ -9,13 +9,14 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `SubzoneBorders.lua`: generated data (~750 KB). Never hand-edit it; regenerate with `tools/build_borders.py`.
   - `Build.lua`: `ns.Build = nil` in the repo; `install_beta.cmd` stamps the installed copy with the commit hash, shown by `/subzones debug`.
   - `SUBZONES.toc`
+  - `icon.tga`: 64×64 uncompressed 32-bit TGA of the round logo, the TOC's `## IconTexture` (AddOns list).
 - `tools/`: offline data pipeline (Python 3, standard library except where noted). Needed to regenerate border data after game patches; not needed to run the addon.
   - `casc.py`: read-only CASC reader for the local install, with Blizzard CDN fallback.
   - `extract_game.py`: WDT/ADT → per-chunk area IDs → `data/game_areas.json`.
   - `borders.py`: shared geometry: grid → border polylines → smoothing → Lua writer.
   - `build_borders.py`: `game_areas.json` (or `--source site`) → `SUBZONES/SubzoneBorders.lua`.
   - `install_beta.cmd`: Windows; pulls from GitHub and mirrors `SUBZONES/` into the beta client's AddOns folder, stamping `Build.lua`. CRLF line endings (`.gitattributes`).
-  - `package.py`: `SUBZONES/` → `release/SUBZONES-<version>.zip` (TOC + the files it loads).
+  - `package.py`: `SUBZONES/` → `release/SUBZONES-<version>.zip` (TOC, the files it loads, the icon and LICENSE).
   - `compare.py`: wowforevermap.com `subzones.json` vs game, chunk by chunk → `data/comparison.md` + PNGs (needs Pillow).
   - `data/`: extraction output, the site's JSON, comparison report.
   - `cache/`: CDN downloads (~65 MB, safe to delete; refetched on demand).

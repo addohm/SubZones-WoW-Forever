@@ -2,6 +2,7 @@
 ## Title: SUBZONES
 ## Notes: Subzone borders, names and optional color fills on the world map, from the game's own terrain data.
 ## Category: Map & Minimap
+## IconTexture: Interface\AddOns\SUBZONES\icon
 ## Version: 1.0.0
 ## Author: addohm
 ## X-License: GPLv3

@@ -13,6 +13,7 @@ All notable changes to SubZones-WoW-Forever. The format follows
 - `tools/package.py` and the packaged `release/SUBZONES-1.0.0.zip`.
 - `tools/install_beta.cmd`: pulls from GitHub and installs the addon into the beta client, stamping the commit into `Build.lua`.
 - `/subzones debug` shows the addon version and installed build.
+- The logo as the addon's icon in the AddOns list (`icon.tga`).
 
 ### Changed
 
