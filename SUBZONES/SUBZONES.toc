@@ -7,5 +7,6 @@
 ## X-Website: https://github.com/addohm/SubZones-WoW-Forever
 ## SavedVariables: SubzonesDB
 
+Build.lua
 SubzoneBorders.lua
 SUBZONES.lua

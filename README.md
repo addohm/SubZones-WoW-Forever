@@ -25,7 +25,7 @@ python tools/extract_game.py    # reads the installed build; first run ~6 min, c
 python tools/build_borders.py
 ```
 
-Then copy `SUBZONES/` into `Interface/AddOns/`. Useful options:
+Then commit, push and run `tools\install_beta.cmd` (or copy `SUBZONES/` into `Interface/AddOns/`). Useful options:
 - `extract_game.py --product`: pick a different install, for example `wow_classic`.
 - `extract_game.py --wdt ID=FDID`: add a continent that couldn't be identified automatically.
 - `build_borders.py --raw`: keep the exact chunk staircase.
@@ -48,6 +48,7 @@ This compares the site's subzones (`tools/data/subzones.json`) with the game, ch
 | `build_borders.py` | Area grid → `SUBZONES/SubzoneBorders.lua` |
 | `borders.py` | Shared geometry: grid → border lines, smoothing, Lua output |
 | `compare.py` | Site vs game report |
+| `install_beta.cmd` | Windows: pull from GitHub and install the addon into the beta client |
 | `package.py` | Addon → `release/SUBZONES-<version>.zip` for CurseForge / Wago |
 
 Limits: this beta build ships no decryption keys, so the 8 encrypted (unreleased) continents are skipped, and area names are only read in-game. One 16-tile map (fileDataID 790377) isn't matched to a continent ID automatically.

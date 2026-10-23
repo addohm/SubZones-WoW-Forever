@@ -7,12 +7,14 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
 - `SUBZONES/`: the addon, which is what gets installed.
   - `SUBZONES.lua`: all runtime code.
   - `SubzoneBorders.lua`: generated data (~750 KB). Never hand-edit it; regenerate with `tools/build_borders.py`.
+  - `Build.lua`: `ns.Build = nil` in the repo; `install_beta.cmd` stamps the installed copy with the commit hash, shown by `/subzones debug`.
   - `SUBZONES.toc`
 - `tools/`: offline data pipeline (Python 3, standard library except where noted). Needed to regenerate border data after game patches; not needed to run the addon.
   - `casc.py`: read-only CASC reader for the local install, with Blizzard CDN fallback.
   - `extract_game.py`: WDT/ADT → per-chunk area IDs → `data/game_areas.json`.
   - `borders.py`: shared geometry: grid → border polylines → smoothing → Lua writer.
   - `build_borders.py`: `game_areas.json` (or `--source site`) → `SUBZONES/SubzoneBorders.lua`.
+  - `install_beta.cmd`: Windows; pulls from GitHub and mirrors `SUBZONES/` into the beta client's AddOns folder, stamping `Build.lua`. CRLF line endings (`.gitattributes`).
   - `package.py`: `SUBZONES/` → `release/SUBZONES-<version>.zip` (TOC + the files it loads).
   - `compare.py`: wowforevermap.com `subzones.json` vs game, chunk by chunk → `data/comparison.md` + PNGs (needs Pillow).
   - `data/`: extraction output, the site's JSON, comparison report.
@@ -22,7 +24,7 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
 
 ## Workflow
 
-- **After every addon change**, copy `SUBZONES/*` to `C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns\SUBZONES` so the user can `/reload` and test. Don't copy `SUBZONES.zip` (the user's own packaging artifact).
+- **After every addon change**, commit and push; the user runs `tools\install_beta.cmd`, which pulls and mirrors `SUBZONES/` into `C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns\SUBZONES` (skipping zips), then `/reload`s. `/subzones debug` shows the installed build.
 - **After a game patch:** `python tools/extract_game.py` (first run ~6 min) then `python tools/build_borders.py`, then install as above.
 - **Testing:** there's no in-game test runner. Verify Lua by loading it in LuaJIT (`pip install lupa` in a throwaway venv, never system Python) against stubbed WoW APIs, then render the recorded lines/quads/labels with Pillow and look at the image. Keep harnesses in the scratchpad, not the project. State plainly that stub tests can't prove client behaviour; the user tests in-game and reports `/subzones debug` output.
 - Error and crash logs live in `...\_classic_beta_\Errors\`. Lua errors come via BugSack. Other addons (MapUtils, EllesmereUI, …) produce their own errors; check the stack before assuming it's ours.

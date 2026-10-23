@@ -11,7 +11,7 @@
 -- Blizzard_MapCanvas is load-on-demand on some clients, so nothing here
 -- touches its mixins until the world map has loaded (see Install).
 
-local ADDON_NAME = ...
+local ADDON_NAME, ns = ...
 local TITLE = "SUBZONES"
 
 local GOLDEN_RATIO = 0.618033988749895
@@ -948,7 +948,9 @@ local function PrintDebug()
 	if first then
 		Print(("%s label at %.3f, %.3f (should be within 0-1)"):format(AreaName(first.id) or first.id, first.u, first.v))
 	end
-	Print("installed", overlay and "yes" or "no", "| interface", (select(4, GetBuildInfo())))
+	local version = C_AddOns and C_AddOns.GetAddOnMetadata(ADDON_NAME, "Version") or "?"
+	Print("installed", overlay and "yes" or "no", "| interface", (select(4, GetBuildInfo())),
+		"| version", version, "| build", ns.Build or "release")
 end
 
 local function Toggle(key, label)
