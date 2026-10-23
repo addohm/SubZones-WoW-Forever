@@ -56,4 +56,5 @@ Limits: this beta build ships no decryption keys, so the 8 encrypted (unreleased
 - [CHANGELOG.md](CHANGELOG.md): what changed in each version
 - [DEPLOY.md](DEPLOY.md): installing, shipping changes, updating data after a patch
 - [SECURITY.md](SECURITY.md): reporting problems; no secrets are used
+- [listing/LISTING.md](listing/LISTING.md): CurseForge / Wago listing copy and logos
 - [CLAUDE.md](CLAUDE.md): orientation for working on the code with Claude

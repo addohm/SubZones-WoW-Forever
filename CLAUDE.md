@@ -16,6 +16,7 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `compare.py`: wowforevermap.com `subzones.json` vs game, chunk by chunk → `data/comparison.md` + PNGs (needs Pillow).
   - `data/`: extraction output, the site's JSON, comparison report.
   - `cache/`: CDN downloads (~65 MB, safe to delete; refetched on demand).
+- `listing/`: CurseForge / Wago listing copy (`LISTING.md`) and logos. Not part of the addon zip; keep the copy in step with features.
 
 ## Workflow
 

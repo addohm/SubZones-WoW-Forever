@@ -3,6 +3,8 @@
 ## Notes: Subzone borders, names and optional color fills on the world map, from the game's own terrain data.
 ## Category: Map & Minimap
 ## Version: 1.0.0
+## Author: addohm
+## X-Website: https://github.com/addohm/SubZones-WoW-Forever
 ## SavedVariables: SubzonesDB
 
 SubzoneBorders.lua
