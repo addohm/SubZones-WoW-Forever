@@ -1,110 +1,135 @@
-# SUBZONES — CurseForge / Wago pitch sheet
+# SUBZONES: CurseForge and Wago listing
 
-Paste-ready copy for both listings, plus what still needs doing before upload. The logos are in this folder.
+Copy-paste material for the project pages. Placeholders are in [brackets].
 
 ---
 
-## Listing basics
+## Basics
 
 | Field | Value |
 | --- | --- |
-| Project name | SUBZONES — Subzone Borders & Names |
-| Author | addohm |
+| Name | SUBZONES |
 | Slug | `subzones` (fallback `subzones-forever`) |
-| Category | Map & Minimap |
-| Game version | WoW Forever, interface **16001** |
-| Version | 1.0.0 |
-| License | *pick one; the repo has no LICENSE yet* |
+| Game version | WoW: Forever (Interface 16001, client 1.60.1) |
+| Author | addohm |
+| License | [choose: All Rights Reserved, MIT, ...] |
 | Source | https://github.com/addohm/SubZones-WoW-Forever |
 | Issues | https://github.com/addohm/SubZones-WoW-Forever/issues |
-| Logo | `subzones-logo-400.png` (CurseForge), `subzones-logo-1024.png`; `subzones-logo-round-1024.png` has a transparent background |
+| Logo | `subzones-logo-400.png`, `subzones-logo-1024.png`, `subzones-logo-round-1024.png` (transparent) in this folder |
 
-**Summary** (one line, under 100 characters):
+**Categories**
+- CurseForge: Map & Minimap (main), Quests & Leveling
+- Wago: [the map/minimap category (main)], [the leveling category]
 
-> See every subzone on your map: borders, names and optional color tints, straight from the game's terrain.
+**Summary** (the one-liner under the name; 105 characters)
 
-**Alternates:**
+> See every subzone on your map: borders, names and optional color tints, straight from the game's
+> terrain.
 
-- Subzone borders and names on the world map and minimap, from WoW Forever's own terrain data.
-- Know exactly where Goldshire ends: subzone outlines on your world map and minimap.
+**Short tagline** (for images or a Discord post)
 
-**Keywords / tags:** subzones, map, minimap, borders, world map, exploration, zones, overlay, WoW Forever, leveling
-
----
-
-## Description (Markdown; works on both sites)
-
-```markdown
-# SUBZONES
-
-**See where every subzone begins and ends.** SUBZONES draws subzone borders and names on your world map and minimap, with optional color tints, for **WoW Forever**.
-
-The borders aren't hand-drawn or guessed. They come from the game's own terrain files, the same data the client uses to decide which subzone you're standing in. When you cross a SUBZONES line, your subzone changes.
-
-## Features
-
-- **World map borders:** clean, smoothed outlines for every subzone in the zone you're viewing.
-- **Subzone names:** labels at the center of each area. Unexplored subzones show in grey, or you can hide them.
-- **Three styles:** Lines only (default), Lines + tint, or Tint only, with each subzone in its own color.
-- **Minimap overlay:** your current zone's borders drawn around you, clipped to round or square minimaps, and turning with Rotate Minimap.
-- **Light on resources:** it only draws zone maps, never whole continents, and the minimap only redraws when you move, turn or zoom.
-- **Easy to control:** a **Subzones** checkbox on the world map (right-click it for options), a full Settings panel, and slash commands.
-
-## Coverage
-
-Eastern Kingdoms, Kalimdor and Zephras Isle.
-
-## How to use
-
-- Tick **Subzones** at the bottom-left of the world map. Right-click it for the style, names, unexplored subzones and **Options…**
-- **Settings → AddOns → SUBZONES** for line width, tint opacity and the minimap toggle.
-- `/subzones` (or `/sz`): `toggle`, `options`, `lines`, `both`, `tint`, `labels`, `unexplored`, `minimap`, `alpha <0-1>`, `width <px>`, `blend`, `debug`
-
-## Why it's accurate
-
-WoW has no subzone shapes. Instead, the world is a grid of 33-yard terrain chunks, and each chunk is tagged with one area. SUBZONES reads that grid from the client, traces the edges between areas, and smooths the 33-yard staircase into curves. The result matches **99.95%** of the subzone chunks published by wowforevermap.com, and the only differences are where Forever itself changed the map (Dalaran and Windstead).
-
-## Feedback
-
-Found a border in the wrong place or a missing name? Open an issue on GitHub with a screenshot and the output of `/subzones debug`.
-```
+> Know exactly where Goldshire ends.
 
 ---
 
-## Screenshots to take (in this order)
+## Description
 
-1. **Hero shot:** Elwynn Forest world map, Lines + tint, names on. It's the area most people know, and it reads well at thumbnail size.
-2. **Lines only:** a busy zone (Stranglethorn or Ashenvale) showing the default style.
-3. **Minimap:** standing on a border, with a round minimap and Rotate Minimap on if possible.
-4. **Unexplored:** a partly explored zone with grey names next to gold ones.
-5. **Settings panel** and the right-click menu on the map checkbox.
-6. *(Optional)* Before/after GIF of the checkbox being ticked.
+*(Paste as Markdown. Both sites accept it.)*
 
-Shoot at 1920×1080 or higher with the UI scaled so the labels are readable.
+### SUBZONES
 
----
+**Subzone borders and names on your world map and minimap, built for WoW: Forever.**
 
-## First release notes
+The world map shows you a zone, but not where its subzones begin and end. SUBZONES draws them: clean
+outlines, names, and optional color tints, on the world map and around you on the minimap.
 
-```markdown
-## 1.0.0
+The borders aren't hand-drawn or guessed. They come from the game's own terrain files, the same data
+the client uses to decide which subzone you're standing in. When you cross a SUBZONES line, your
+subzone changes.
 
-First public release.
+#### On the world map
 
-- Subzone borders and names on the world map, with Lines / Lines + tint / Tint styles.
-- Subzone borders on the minimap, clipped to its shape and rotating with it.
-- Unexplored subzones shown in grey (optional).
-- Settings panel, right-click map menu and /subzones (/sz) commands.
+- Smoothed outlines for every subzone of the zone you're viewing.
+- Names at the center of each subzone. Ones you haven't explored yet show in grey, or you can hide
+  them.
+- Three styles: **Lines only** (default), **Lines + tint**, or **Tint only**, with neighbouring
+  subzones always in clearly different colors.
+- A **Subzones** checkbox at the bottom-left of the map turns it on and off. Right-click it for the
+  style, names and options.
+
+#### On the minimap
+
+- Your current zone's subzone borders, drawn around you as you move.
+- Clipped to round or square minimaps, and turning with **Rotate Minimap**.
+- It only redraws when you move, turn or zoom.
+
+#### Accurate by design
+
+WoW has no subzone shapes. Instead, the world is a grid of 33-yard terrain chunks, and each chunk is
+tagged with one area. SUBZONES reads that grid from the client, traces the edges between areas and
+smooths the 33-yard staircase into curves. The result matches **99.95%** of the subzone chunks
+published by wowforevermap.com; the only differences are where Forever itself changed the map
+(Dalaran and Windstead).
+
+#### Settings
+
+- Show subzones, style, subzone names, unexplored subzones, show on minimap, line width and tint
+  opacity.
+- In **Settings → AddOns → SUBZONES**, the right-click menu on the map checkbox, or by command.
+
+#### Commands
+
+- `/subzones`: turn the overlay on or off. `/subzones options`: the settings panel.
+- `/subzones lines`, `both`, `tint`, `labels`, `unexplored`, `minimap`, `alpha <0-1>`, `width <px>`,
+  `blend`, `debug`
+- `/sz` works too.
+
+#### Good to know
+
 - Covers Eastern Kingdoms, Kalimdor and Zephras Isle.
-```
+- Draws on zone maps only, never whole continents, to keep the map fast.
+- Settings stay on your computer in the game's own saved data. No network access, no libraries.
+- **Found a border in the wrong place?** Open an issue on GitHub with a screenshot and the output of
+  `/subzones debug`.
 
 ---
 
-## Before you upload
+## Screenshots to take
 
-- **License:** CurseForge makes you pick one. MIT or All Rights Reserved are the usual choices. Add a matching `LICENSE` file to the repo.
-- **TOC fields:** `## Author` and `## X-Website` are set. Add `## X-Curse-Project-ID:` and `## X-Wago-ID:` once the projects exist (the IDs let addon managers and packagers link them).
-- **Zip:** upload `release/SUBZONES-<version>.zip`, built by `python tools/package.py`. It must contain a top-level `SUBZONES/` folder with only `SUBZONES.toc`, `Build.lua`, `SUBZONES.lua` and `SubzoneBorders.lua`, not `tools/` or `listing/`.
-- **Forever flavor:** confirm the upload form offers WoW Forever / 16001 as a game version. Third-party guides say Forever builds are tagged on both sites, but I couldn't find official docs for it. Wago's API docs only list retail/classic patch fields.
-- **wowforevermap.com mention:** the 99.95% line names their site. It's a fair comparison, but cut the sentence if you'd rather not reference another project.
-- **Timing:** Forever launches **Nov 4, 2026**. Listing before launch catches people building their UI.
+1. **Hero:** Elwynn Forest world map, Lines + tint, names on.
+2. Lines only on a busy zone (Stranglethorn or Ashenvale).
+3. The minimap while standing on a border, round, with Rotate Minimap on.
+4. A partly explored zone: grey names next to gold ones.
+5. Tint only on a zone with many small subzones.
+6. The Settings panel.
+7. The right-click menu on the map's **Subzones** checkbox.
+
+Tips: use a clean UI (hide other addons), 16:9 at 1920×1080, crop to the subject, and scale the UI
+so the names are readable.
+
+---
+
+## Release notes for 1.0.0
+
+> First release, for WoW: Forever.
+>
+> - Subzone borders and names on the world map, in Lines, Lines + tint or Tint styles
+> - Subzone borders on the minimap, clipped to its shape and turning with it
+> - Unexplored subzones in grey (optional)
+> - Settings panel, right-click map menu and `/subzones` (`/sz`) commands
+> - Covers Eastern Kingdoms, Kalimdor and Zephras Isle
+
+---
+
+## Before publishing
+
+- Choose a license and add a matching `LICENSE` file to the repo.
+- Move the CHANGELOG's Unreleased entries under the version, bump `## Version` in `SUBZONES.toc` if
+  needed, and rebuild the zip with `python tools/package.py` (see DEPLOY.md). Upload
+  `release/SUBZONES-<version>.zip`.
+- Add the project IDs to the `.toc` (`## X-Curse-Project-ID`, `## X-Wago-ID`) once the projects
+  exist, then rebuild the zip.
+- Check that both upload forms offer WoW: Forever (16001) as a game version, and pick Wago's
+  category names from its dropdown.
+- Cut the wowforevermap.com sentence if you'd rather not name another project.
+- Project icon: `subzones-logo-400.png` from this folder.
