@@ -126,9 +126,9 @@ so the names are readable.
 
 ## Before publishing
 
-- Move the CHANGELOG's Unreleased entries under the version, bump `## Version` in `SUBZONES.toc` if
-  needed, and rebuild the zip with `python tools/package.py` (see DEPLOY.md). Upload
-  `release/SUBZONES-<version>.zip`.
+- Upload `release/SUBZONES-1.0.0.zip` (ready; built by `python tools/package.py`). For later
+  versions: move the CHANGELOG's Unreleased entries under the new version, bump `## Version` in
+  `SUBZONES.toc` and rebuild (see DEPLOY.md).
 - Add the project IDs to the `.toc` (`## X-Curse-Project-ID`, `## X-Wago-ID`) once the projects
   exist, then rebuild the zip.
 - Check that both upload forms offer WoW: Forever (16001) as a game version, and pick Wago's

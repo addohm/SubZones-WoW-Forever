@@ -6,21 +6,9 @@ All notable changes to SubZones-WoW-Forever. The format follows
 
 ## [Unreleased]
 
-### Added
+## [1.0.0] - 2026-10-23
 
-- CurseForge / Wago listing copy in `listing/`, and logos and a banner in `art/`.
-- `Author` and `X-Website` fields in the TOC.
-- `tools/package.py` and the packaged `release/SUBZONES-1.0.0.zip`.
-- `tools/install_beta.cmd`: pulls from GitHub and installs the addon into the beta client, stamping the commit into `Build.lua`.
-- `/subzones debug` shows the addon version and installed build.
-- The logo as the addon's icon in the AddOns list (`icon.tga`).
-
-### Changed
-
-- Licensed under GPLv3 (`LICENSE`, also packed into the release zip).
-- The repository is public. SECURITY.md describes the release zips.
-
-## [1.0.0] - 2026-10-15
+First public release, for CurseForge and Wago.
 
 ### Added
 
@@ -29,6 +17,12 @@ All notable changes to SubZones-WoW-Forever. The format follows
 - Options panel under Settings → AddOns → SUBZONES, a right-click menu on the world map's **Subzones** checkbox, and `/subzones` (`/sz`) commands.
 - Border data extracted from the game's own terrain files (per-chunk area IDs), covering Eastern Kingdoms, Kalimdor and Zephras Isle.
 - Data tools: a CASC reader with Blizzard CDN fallback (`casc.py`), terrain extraction (`extract_game.py`), border generation (`build_borders.py`) and a comparison against wowforevermap.com (`compare.py`). The comparison shows 99.95% of chunks match.
+- `/subzones debug` shows the addon version and installed build.
+- The logo as the addon's icon in the AddOns list (`icon.tga`).
+- Release tooling: `tools/package.py` builds `release/SUBZONES-<version>.zip`, and `tools/install_beta.cmd` pulls from GitHub and installs into the beta client, stamping the commit into `Build.lua`.
+- CurseForge / Wago listing copy in `listing/`, and logos and a banner in `art/`.
+- `Author`, `X-License` and `X-Website` fields in the TOC.
+- Licensed under GPLv3 (`LICENSE`, also packed into the release zip). The repository is public.
 - Standard docs: README, CLAUDE, CHANGELOG, DEPLOY and SECURITY.
 
 ### Fixed
