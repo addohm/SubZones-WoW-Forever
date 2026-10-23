@@ -19,7 +19,9 @@ Only `SUBZONES.toc`, `SUBZONES.lua` and `SubzoneBorders.lua` are needed. Everyth
 
 1. Edit `SUBZONES/SUBZONES.lua`. Never hand-edit `SubzoneBorders.lua`; it's generated.
 2. Copy `SUBZONES/*` into the AddOns folder, `/reload`, and test.
-3. Bump `## Version` in `SUBZONES.toc`, add a CHANGELOG entry, commit and push.
+3. Bump `## Version` in `SUBZONES.toc` and add a CHANGELOG entry.
+4. Run `python tools/package.py` to build `release/SUBZONES-<version>.zip`. That zip is what gets uploaded to CurseForge and Wago.
+5. Commit and push, including the new zip.
 
 To roll back, check out the previous commit's `SUBZONES/` folder and copy it in again.
 

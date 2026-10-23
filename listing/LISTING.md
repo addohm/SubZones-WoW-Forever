@@ -104,7 +104,7 @@ First public release.
 
 - **License:** CurseForge makes you pick one. MIT or All Rights Reserved are the usual choices. Add a matching `LICENSE` file to the repo.
 - **TOC fields:** `## Author` and `## X-Website` are set. Add `## X-Curse-Project-ID:` and `## X-Wago-ID:` once the projects exist (the IDs let addon managers and packagers link them).
-- **Zip layout:** the zip must contain a top-level `SUBZONES/` folder with only `SUBZONES.toc`, `SUBZONES.lua` and `SubzoneBorders.lua`, not `tools/` or `listing/`.
+- **Zip:** upload `release/SUBZONES-<version>.zip`, built by `python tools/package.py`. It must contain a top-level `SUBZONES/` folder with only `SUBZONES.toc`, `SUBZONES.lua` and `SubzoneBorders.lua`, not `tools/` or `listing/`.
 - **Forever flavor:** confirm the upload form offers WoW Forever / 16001 as a game version. Third-party guides say Forever builds are tagged on both sites, but I couldn't find official docs for it. Wago's API docs only list retail/classic patch fields.
 - **wowforevermap.com mention:** the 99.95% line names their site. It's a fair comparison, but cut the sentence if you'd rather not reference another project.
 - **Timing:** Forever launches **Nov 4, 2026**. Listing before launch catches people building their UI.

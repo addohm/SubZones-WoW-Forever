@@ -13,9 +13,11 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `extract_game.py`: WDT/ADT → per-chunk area IDs → `data/game_areas.json`.
   - `borders.py`: shared geometry: grid → border polylines → smoothing → Lua writer.
   - `build_borders.py`: `game_areas.json` (or `--source site`) → `SUBZONES/SubzoneBorders.lua`.
+  - `package.py`: `SUBZONES/` → `release/SUBZONES-<version>.zip` (TOC + the files it loads).
   - `compare.py`: wowforevermap.com `subzones.json` vs game, chunk by chunk → `data/comparison.md` + PNGs (needs Pillow).
   - `data/`: extraction output, the site's JSON, comparison report.
   - `cache/`: CDN downloads (~65 MB, safe to delete; refetched on demand).
+- `release/`: packaged zips for CurseForge / Wago, committed. Rebuild with `python tools/package.py` after a version bump.
 - `listing/`: CurseForge / Wago listing copy (`LISTING.md`) and logos. Not part of the addon zip; keep the copy in step with features.
 
 ## Workflow
@@ -53,4 +55,4 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
 
 ## Git
 
-GitHub: `addohm/SubZones-WoW-Forever`, branch `main`. `.gitignore` covers the global secret patterns, `tools/cache/`, `tools/data/subzones.json` (wowforevermap.com's data; never commit it) and `*.zip`. Record notable changes in CHANGELOG.md, and keep README/DEPLOY in step with them.
+GitHub: `addohm/SubZones-WoW-Forever`, branch `main`. `.gitignore` covers the global secret patterns, `tools/cache/`, `tools/data/subzones.json` (wowforevermap.com's data; never commit it) and `*.zip` except `release/*.zip`. Record notable changes in CHANGELOG.md, and keep README/DEPLOY in step with them.

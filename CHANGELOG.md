@@ -10,6 +10,7 @@ All notable changes to SubZones-WoW-Forever. The format follows
 
 - CurseForge / Wago listing copy and logos in `listing/`.
 - `Author` and `X-Website` fields in the TOC.
+- `tools/package.py` and the packaged `release/SUBZONES-1.0.0.zip`.
 
 ## [1.0.0] - 2026-10-15
 

@@ -18,7 +18,8 @@ tools/cache/
 # wowforevermap.com's data, used only by tools/compare.py; download it locally
 tools/data/subzones.json
 
-# Packaged releases and Python leftovers
+# Packaged zips, except the release builds made by tools/package.py; Python leftovers
 *.zip
+!release/*.zip
 __pycache__/
 *.pyc

@@ -48,6 +48,7 @@ This compares the site's subzones (`tools/data/subzones.json`) with the game, ch
 | `build_borders.py` | Area grid → `SUBZONES/SubzoneBorders.lua` |
 | `borders.py` | Shared geometry: grid → border lines, smoothing, Lua output |
 | `compare.py` | Site vs game report |
+| `package.py` | Addon → `release/SUBZONES-<version>.zip` for CurseForge / Wago |
 
 Limits: this beta build ships no decryption keys, so the 8 encrypted (unreleased) continents are skipped, and area names are only read in-game. One 16-tile map (fileDataID 790377) isn't matched to a continent ID automatically.
 
