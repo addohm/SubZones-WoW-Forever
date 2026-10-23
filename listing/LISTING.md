@@ -15,7 +15,7 @@ Copy-paste material for the project pages. Placeholders are in [brackets].
 | License | GNU General Public License version 3 (GPLv3) |
 | Source | https://github.com/addohm/SubZones-WoW-Forever |
 | Issues | https://github.com/addohm/SubZones-WoW-Forever/issues |
-| Logo | `subzones-logo-400.png`, `subzones-logo-1024.png`, `subzones-logo-round-1024.png` (transparent) in this folder |
+| Logo | `subzones-logo-400.png`, `subzones-logo-1024.png`, `subzones-logo-round-1024.png` (transparent) in `art/` |
 
 **Categories**
 - CurseForge: Map & Minimap (main), Quests & Leveling
@@ -131,4 +131,4 @@ so the names are readable.
 - Check that both upload forms offer WoW: Forever (16001) as a game version, and pick Wago's
   category names from its dropdown.
 - Cut the wowforevermap.com sentence if you'd rather not name another project.
-- Project icon: `subzones-logo-400.png` from this folder.
+- Project icon: `art/subzones-logo-400.png`.

@@ -62,5 +62,5 @@ SUBZONES is licensed under the GNU General Public License version 3 (GPLv3); see
 - [CHANGELOG.md](CHANGELOG.md): what changed in each version
 - [DEPLOY.md](DEPLOY.md): installing, shipping changes, updating data after a patch
 - [SECURITY.md](SECURITY.md): reporting problems; no secrets are used
-- [listing/LISTING.md](listing/LISTING.md): CurseForge / Wago listing copy and logos
+- [listing/LISTING.md](listing/LISTING.md): CurseForge / Wago listing copy; logos are in [art/](art/)
 - [CLAUDE.md](CLAUDE.md): orientation for working on the code with Claude
