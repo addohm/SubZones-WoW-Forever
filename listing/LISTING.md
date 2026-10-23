@@ -16,6 +16,7 @@ Copy-paste material for the project pages. Placeholders are in [brackets].
 | Source | https://github.com/addohm/SubZones-WoW-Forever |
 | Issues | https://github.com/addohm/SubZones-WoW-Forever/issues |
 | Logo | `subzones-logo-400.png`, `subzones-logo-1024.png`, `subzones-logo-round-1024.png` (transparent) in `art/` |
+| Banner | `art/subzones-banner.png` (1920×480), at the top of the description |
 
 **Categories**
 - CurseForge: Map & Minimap (main), Quests & Leveling
@@ -35,6 +36,8 @@ Copy-paste material for the project pages. Placeholders are in [brackets].
 ## Description
 
 *(Paste as Markdown. Both sites accept it.)*
+
+![SUBZONES](https://raw.githubusercontent.com/addohm/SubZones-WoW-Forever/main/art/subzones-banner.png)
 
 ### SUBZONES
 

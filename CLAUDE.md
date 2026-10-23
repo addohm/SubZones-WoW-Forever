@@ -21,7 +21,7 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `cache/`: CDN downloads (~65 MB, safe to delete; refetched on demand).
 - `release/`: packaged zips for CurseForge / Wago, committed. Rebuild with `python tools/package.py` after a version bump.
 - `listing/`: CurseForge / Wago listing copy (`LISTING.md`). Not part of the addon zip; keep the copy in step with features.
-- `art/`: logos (1024 and 400 px squares, plus a round one with a transparent background). Not part of the addon zip.
+- `art/`: logos (1024 and 400 px squares, plus a round one with a transparent background) and a 1920×480 banner (README and listing header). Drawn from the real Elwynn borders; not part of the addon zip.
 
 ## Workflow
 

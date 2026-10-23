@@ -8,7 +8,7 @@ All notable changes to SubZones-WoW-Forever. The format follows
 
 ### Added
 
-- CurseForge / Wago listing copy in `listing/`, and logos in `art/`.
+- CurseForge / Wago listing copy in `listing/`, and logos and a banner in `art/`.
 - `Author` and `X-Website` fields in the TOC.
 - `tools/package.py` and the packaged `release/SUBZONES-1.0.0.zip`.
 - `tools/install_beta.cmd`: pulls from GitHub and installs the addon into the beta client, stamping the commit into `Build.lua`.

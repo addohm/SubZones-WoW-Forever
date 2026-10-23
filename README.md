@@ -1,5 +1,7 @@
 # SUBZONES
 
+![SUBZONES](art/subzones-banner.png)
+
 A WoW addon for WoW Forever (TOC 16001) that draws subzone borders and names on the world map, with optional color fills. The borders are extracted from the game's own terrain files.
 
 ## Using it
