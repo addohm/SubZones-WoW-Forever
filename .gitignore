@@ -20,6 +20,6 @@ tools/data/subzones.json
 
 # Packaged zips, except the release builds made by tools/package.py; Python leftovers
 *.zip
-!release/*.zip
+!releases/*.zip
 __pycache__/
 *.pyc

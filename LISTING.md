@@ -130,11 +130,11 @@ so the names are readable.
 
 ## Before publishing
 
-- Test the packaged `release/SUBZONES-1.0.0.zip` in game: the icon in the AddOns list, and
+- Test the packaged `releases/SUBZONES-1.0.0.zip` in game: the icon in the AddOns list, and
   `/subzones debug` saying build `release`.
 - The package is ready at 1.0.0. For later versions, bump `## Version` in `SUBZONES/SUBZONES.toc`,
   move the CHANGELOG's Unreleased entries under the version, then `python tools/package.py` and
-  commit the new zip in `release/` (see DEPLOY.md).
+  commit the new zip in `releases/` (see DEPLOY.md).
 - Add the project IDs to `SUBZONES/SUBZONES.toc` (`## X-Curse-Project-ID`, `## X-Wago-ID`) once the
   projects exist, then rebuild the zip.
 - Check that CurseForge and Wago list a Forever game version (Interface 16001) at launch, Nov 4,

@@ -15,4 +15,4 @@ SubZones-WoW-Forever uses no secrets:
 
 ## Access
 
-The repository is public; only the owner can push to `main`. Releases are zips of the `SUBZONES/` folder in `release/`, uploaded to CurseForge and Wago by the owner, so there is no production environment to grant access to.
+The repository is public; only the owner can push to `main`. Releases are zips of the `SUBZONES/` folder in `releases/`, uploaded to CurseForge and Wago by the owner, so there is no production environment to grant access to.

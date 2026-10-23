@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package the addon into release/SUBZONES-<version>.zip for CurseForge / Wago.
+"""Package the addon into releases/SUBZONES-<version>.zip for CurseForge / Wago.
 
     python tools/package.py
 
@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ADDON = ROOT / "SUBZONES"
 TOC = ADDON / "SUBZONES.toc"
-RELEASE = ROOT / "release"
+RELEASE = ROOT / "releases"
 
 
 def toc_version(text):

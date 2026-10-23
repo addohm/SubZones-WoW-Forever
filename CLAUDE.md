@@ -16,11 +16,11 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
   - `borders.py`: shared geometry: grid → border polylines → smoothing → Lua writer.
   - `build_borders.py`: `game_areas.json` (or `--source site`) → `SUBZONES/SubzoneBorders.lua`.
   - `install_beta.cmd`: Windows; pulls from GitHub and mirrors `SUBZONES/` into the beta client's AddOns folder, stamping `Build.lua`. CRLF line endings (`.gitattributes`).
-  - `package.py`: `SUBZONES/` → `release/SUBZONES-<version>.zip` (TOC, the files it loads, the icon and LICENSE).
+  - `package.py`: `SUBZONES/` → `releases/SUBZONES-<version>.zip` (TOC, the files it loads, the icon and LICENSE).
   - `compare.py`: wowforevermap.com `subzones.json` vs game, chunk by chunk → `data/comparison.md` + PNGs (needs Pillow).
   - `data/`: extraction output, the site's JSON, comparison report.
   - `cache/`: CDN downloads (~65 MB, safe to delete; refetched on demand).
-- `release/`: packaged zips for CurseForge / Wago, committed. Rebuild with `python tools/package.py` after a version bump.
+- `releases/`: packaged zips for CurseForge / Wago, committed. Rebuild with `python tools/package.py` after a version bump.
 - `LISTING.md`: CurseForge / Wago listing copy. Not part of the addon zip; keep the copy in step with features.
 - `art/`: logos (1024 and 400 px squares, plus a round one with a transparent background) and a 1920×480 banner (README and listing header). Drawn from the real Elwynn borders; not part of the addon zip.
 
@@ -59,4 +59,4 @@ WoW addon for **WoW Forever** (client "Camelot", product `wow_classic_beta`, TOC
 
 ## Git
 
-GitHub: `addohm/SubZones-WoW-Forever` (public, GPLv3 in `LICENSE`), branch `main`. Everything committed is world-readable: no local paths, hostnames or private notes. `.gitignore` covers the global secret patterns, `tools/cache/`, `tools/data/subzones.json` (wowforevermap.com's data; never commit it) and `*.zip` except `release/*.zip`. Record notable changes in CHANGELOG.md, and keep README/DEPLOY in step with them.
+GitHub: `addohm/SubZones-WoW-Forever` (public, GPLv3 in `LICENSE`), branch `main`. Everything committed is world-readable: no local paths, hostnames or private notes. `.gitignore` covers the global secret patterns, `tools/cache/`, `tools/data/subzones.json` (wowforevermap.com's data; never commit it) and `*.zip` except `releases/*.zip`. Record notable changes in CHANGELOG.md, and keep README/DEPLOY in step with them.

@@ -22,7 +22,7 @@ Only `SUBZONES.toc`, `Build.lua`, `SUBZONES.lua`, `SubzoneBorders.lua` and `icon
 1. Edit `SUBZONES/SUBZONES.lua`. Never hand-edit `SubzoneBorders.lua`; it's generated.
 2. Push, run `tools\install_beta.cmd`, `/reload`, and test. The script only installs what's on GitHub.
 3. Bump `## Version` in `SUBZONES.toc` and add a CHANGELOG entry.
-4. Run `python tools/package.py` to build `release/SUBZONES-<version>.zip`. That zip is what gets uploaded to CurseForge and Wago.
+4. Run `python tools/package.py` to build `releases/SUBZONES-<version>.zip`. That zip is what gets uploaded to CurseForge and Wago.
 5. Commit and push, including the new zip.
 
 To roll back, check out the previous commit's `SUBZONES/` folder and copy it in again.
